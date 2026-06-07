@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Block common junk paths
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /tmp/
+Disallow: /logs/
+
+# Sitemap location
+Sitemap: https://corelogicsolutions.pk/sitemap.xml
+
+# Crawl-delay hint for polite bots
+Crawl-delay: 5

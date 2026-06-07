@@ -1,0 +1,237 @@
+<!-- ============================================================
+  CoreLogic Solutions — JSON-LD Structured Data
+  Paste ALL of these <script> blocks inside the <head> of index.html
+  ============================================================ -->
+
+<!-- 1. Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CoreLogic Solutions",
+  "alternateName": "CLS",
+  "url": "https://corelogicsolutions.pk",
+  "logo": "https://corelogicsolutions.pk/5.png",
+  "description": "CoreLogic Solutions is a full-stack digital agency based in Lahore, Pakistan — engineering web apps, mobile apps, AI integrations, DevOps, and software products for businesses across Pakistan and globally.",
+  "foundingDate": "2019",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 1,
+    "maxValue": 10
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+92-307-7045417",
+      "contactType": "customer support",
+      "availableLanguage": ["English", "Urdu"],
+      "areaServed": "PK"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "info@corelogicsolutions.pk",
+      "contactType": "sales",
+      "availableLanguage": ["English", "Urdu"]
+    }
+  ],
+  "sameAs": [
+    "https://wa.me/923077045417"
+  ]
+}
+</script>
+
+<!-- 2. WebSite (enables Google Sitelinks Search Box) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CoreLogic Solutions",
+  "url": "https://corelogicsolutions.pk",
+  "description": "Pakistan's digital excellence agency — web apps, mobile apps, AI integrations, and FBR-compliant e-invoicing software.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CoreLogic Solutions"
+  }
+}
+</script>
+
+<!-- 3. LocalBusiness (boosts local Lahore / Pakistan SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CoreLogic Solutions",
+  "image": "https://corelogicsolutions.pk/5.png",
+  "url": "https://corelogicsolutions.pk",
+  "telephone": "+92-307-7045417",
+  "email": "info@corelogicsolutions.pk",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "postalCode": "54000",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.5204,
+    "longitude": 74.3587
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "$$",
+  "currenciesAccepted": "PKR, USD",
+  "paymentAccepted": "Bank Transfer, JazzCash, EasyPaisa",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Pakistan"
+  }
+}
+</script>
+
+<!-- 4. Service — FBR E-Invoice Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FBR E-Invoice by CoreLogic",
+  "url": "https://einvoice.corelogicsolutions.pk",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Pakistan's smartest FBR/PRAL-compliant e-invoicing platform. Submit invoices, get 22-digit IRN and QR code instantly. Built for wholesalers and distributors.",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Monthly Subscription",
+      "price": "4000",
+      "priceCurrency": "PKR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "4000",
+        "priceCurrency": "PKR",
+        "billingDuration": "P1M"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Lifetime License",
+      "price": "60000",
+      "priceCurrency": "PKR"
+    }
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "CoreLogic Solutions",
+    "url": "https://corelogicsolutions.pk"
+  }
+}
+</script>
+
+<!-- 5. Services offered (ItemList) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "CoreLogic Solutions Services",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Web App Development",
+      "description": "Scalable web applications using React, Next.js, and Node.js."
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mobile App Development",
+      "description": "Cross-platform apps with Flutter and React Native for iOS and Android."
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Integration",
+      "description": "LLMs, computer vision, and automation agents embedded into your product."
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "DevOps & Cloud",
+      "description": "CI/CD pipelines, Docker, AWS/GCP infrastructure and monitoring."
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Database Development",
+      "description": "PostgreSQL, MongoDB, Redis — optimized schemas and performance tuning."
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Social Media Ads",
+      "description": "Data-driven campaigns across Meta, TikTok, Google and LinkedIn."
+    }
+  ]
+}
+</script>
+
+<!-- 6. FAQPage (triggers rich FAQ snippet in Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does CoreLogic Solutions offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CoreLogic Solutions offers web app development, mobile app development (Flutter/React Native), AI integration, DevOps & cloud infrastructure, database development, and social media advertising."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is FBR E-Invoice by CoreLogic PRAL compliant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The FBR E-Invoice platform is fully PRAL-compliant and generates a 22-digit IRN and QR code instantly upon invoice submission."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is CoreLogic Solutions based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CoreLogic Solutions is based in Lahore, Pakistan, and serves clients locally and internationally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact CoreLogic Solutions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can reach us via email at info@corelogicsolutions.pk or WhatsApp at +92 307 7045417."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the pricing for FBR E-Invoice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FBR E-Invoice starts from PKR 4,000/month subscription or a one-time lifetime license for PKR 60,000."
+      }
+    }
+  ]
+}
+</script>
